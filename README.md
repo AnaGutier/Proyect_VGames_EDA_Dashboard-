@@ -53,9 +53,8 @@ Definicion de las columnas en orden de aparición según elarchivo original:
 Las consideraciones preliminales de los datos: LO DEL OBJETIVO DEL PROPIO DATASET !!!!!!
 
 ### X.1 Trasnformación y limpieza de datos
-Comienzo la transformación y limpieza de datos atendiendo en cada columna a los valores vacíos y únicos si estos son releavntes para poder identificar posibles anomalías o necesidad de transformación.
-
-En primer lugar observo que las 2 últimas filas no contienen ningún dato, así que las elimino.
+#### X.1.1 Valores duplicados
+Comienzo la transformación y limpieza de datos atendiendo en cada columna a los valores vacíos y únicos si estos son releavntes para poder identificar posibles anomalías o necesidad de transformación. En primer lugar, observo que las 2 últimas filas no contienen ningún dato, así que las elimino.
 
 Además, me percato de que no hay ninguna columna con un identificador único para cada videojuego. La que en un primer lugar pudiera parecer algo similar es la del nombre de estos, sin embargo, este no cuenta con el mismo número de valores únicos que de filas (identificado gracias a las estadísticas de columna que ofrece google sheets). Me aseguro de que no se tratara de un error, comprobando que las frecuencias máximas eran de 9, y filtrando por este criterio observo que esto se debe a que hay videojuegos en diferentes consolas que pueden tener un mismo nombre, no se trata de un error. 
 
@@ -69,6 +68,12 @@ ARRAYFORMULA: permite que la fórmula se aplique a toda la columna al ponerla s�
 SI: Evita generar identificadores si hay algún valor vacío en los seleccionados, que resultan imprescindibles (traducción de "IF" al usar la versión en español de sheets).
 
 Gracias esto resulta una columna sin celdas vacías, con 16.719 filas y 16.717 valores únicos. Es decir, 2 valores repetidos. Gracias a las estadísticas de columna veo un valor con frecuencia 2, el cual filtro y al tener ambas filas las mismas características mencionadas en la fórmula pero diferentes ventas, decido eliminarlas.  
+
+#### X.1.3 Correciones
+En la columna de plataforma, encuentro 31 valores únicos, pero muchos de ellos con frecuencias muy escasas (1, 2, 3, 6, 12, y 29), por lo que no resultan relevantes frente a las 16.717 filas totales. Para una comprensión y visualización más clara de los datos, elimino estas filas al no suponer datos representativos.
+
+#### X.1.3 Valores faltantes
+Las columnas de valoración, también la de desarrollador, yo creo que voy a decir que con tantos valores vacíos no resulta relevante para el análisis, que se centrará en las ventas tal y como indica el nombre del dataset, siendo las valoraciones también un indicador secundario pero no el principal. MAS DE UN TERCIO FALTA EN DESARROLLADOR, EN VALORACIONES INCLUSO MÁS. 
 
 ```
 **PONER EL RATING DE CRÍTICA Y USUARIOS EN EL MISMO FORMATO PARA PODER COMPARARLO !!!!!! **  
