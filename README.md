@@ -68,7 +68,7 @@ ARRAYFORMULA: permite que la fórmula se aplique a toda la columna al ponerla s�
 
 SI: Evita generar identificadores si hay algún valor vacío en los seleccionados, que resultan imprescindibles (traducción de "IF" al usar la versión en español de sheets).
 
-Gracias esto resulta una columna sin celdas vacías, con 16.719 filas y 16.717 valores únicos. Es decir, 2 valores repetidos. Gracias a las estadísticas de columna veo un valor con frecuencia 2, el cual filtro y al tener las mismas características mencionadas en la fórmula pero diferentes valoraciones y ventas, decido eliminar. 
+Gracias esto resulta una columna sin celdas vacías, con 16.719 filas y 16.717 valores únicos. Es decir, 2 valores repetidos. Gracias a las estadísticas de columna veo un valor con frecuencia 2, el cual filtro y al tener ambas filas las mismas características mencionadas en la fórmula pero diferentes ventas, decido eliminarlas.  
 
 ```
 **PONER EL RATING DE CRÍTICA Y USUARIOS EN EL MISMO FORMATO PARA PODER COMPARARLO !!!!!! **  
