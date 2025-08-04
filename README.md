@@ -84,11 +84,16 @@ Por último, observo que las valoraciones de la crítica están en una escala de
 ```
 
 #### X.1.3 Columnas con valores faltantes destacables
-Las columnas con considerables valores faltantes son las de valoración (Critic_Score, Critic_Count, User_Score y User_Count), y la de desarrollador (Developer), 
-
-yo creo que voy a decir que con tantos valores vacíos no resulta relevante para el análisis, que se centrará en las ventas tal y como indica el nombre del dataset, siendo las valoraciones también un indicador secundario pero no el principal. MAS DE UN TERCIO FALTA EN DESARROLLADOR, EN VALORACIONES INCLUSO MÁS. 
+Las columnas con considerables valores faltantes son las de valoración (Critic_Score, Critic_Count, User_Score y User_Count), y la de desarrollador (Developer). Estos valores faltantes llegan a suponer en algunos casos un tercio u incluso más del total, por lo que es necesario tener esto en cuenta a la hora de realizar el análisis de los mismos. Estos datos pueden ser útiles pero a su vez pueden generar sesgos si no tenemos esto en cuenta, e ignorar los juegos que no cuentan con estos datos supone reducir demasiado la muestra. Por ello se realizará el análisis principal enfocado en las ventas y las columnas completas (asegurando una base sólida para este EDA), dejando las otras como un indicador secundario del que no podemos extrapolar al conjunto total, remarcando su carater parcial.  
+ 
 
 ### X.2 Análisis descriptivo de los datos 
+
+Genero una nueva hoja _"Tablas Din 1"_ donde comienzo a generar tablas dinámicas donde relaciono las diferentes variables del set de datos. Junto a estas genero gráficos que me permiten una forma visual de comprender las tendencias de los datos. 
+
+
+
+¿LOS DATOS FALTANTES TIENEN UN PATRÓN? POSIBLEMENTE EL AÑO DE PUBLICACIÓN DE LOS VIDEOUJEGOS 
 
 ### X.3 Dashboard
 
