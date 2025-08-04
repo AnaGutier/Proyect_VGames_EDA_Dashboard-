@@ -69,15 +69,24 @@ SI: Evita generar identificadores si hay algún valor vacío en los seleccionado
 
 Gracias esto resulta una columna sin celdas vacías, con 16.719 filas y 16.717 valores únicos. Es decir, 2 valores repetidos. Gracias a las estadísticas de columna veo un valor con frecuencia 2, el cual filtro y al tener ambas filas las mismas características mencionadas en la fórmula pero diferentes ventas, decido eliminarlas.  
 
-#### X.1.3 Correciones
-En la columna de plataforma, encuentro 31 valores únicos, pero muchos de ellos con frecuencias muy escasas (1, 2, 3, 6, 12, y 29), por lo que no resultan relevantes frente a las 16.717 filas totales. Para una comprensión y visualización más clara de los datos, elimino estas filas al no suponer datos representativos.
+#### X.1.3 Correciones varias en transformación de datos
+En la columna de plataforma, encuentro 31 valores únicos, pero muchos de ellos con frecuencias muy escasas (1, 2, 3, 6, 12, 29 y 52), por lo que no resultan relevantes frente a las 16.717 filas totales. Para una comprensión y visualización más clara de los datos, elimino estas filas al no suponer datos representativos.
 
-#### X.1.3 Valores faltantes
-Las columnas de valoración, también la de desarrollador, yo creo que voy a decir que con tantos valores vacíos no resulta relevante para el análisis, que se centrará en las ventas tal y como indica el nombre del dataset, siendo las valoraciones también un indicador secundario pero no el principal. MAS DE UN TERCIO FALTA EN DESARROLLADOR, EN VALORACIONES INCLUSO MÁS. 
+Hay varias columnas con valores numéricos (correpondientes a año de publicación, ventas y valoraciones) que incialmente están en un formato de texto. Los transformo a formato numérico. Para que sheets reconozca los puntos como separación para los decimales decido poner la configuración de EEUU en lugar de la de España que era de la que partía este archivo.
 
+En concreto con la columna de año de publicación, al tener sólo el dato del año, no se reconoce como fecha al cambiar el formato. Por ello genero una nueva conluma _"Year_Date"_ con la siguiente fórmula para poder aplicar el formato fecha y luego personalizarlo para sólo visualizar el año (el dato real) pero trabajar con el formato que corresponde.
 ```
-**PONER EL RATING DE CRÍTICA Y USUARIOS EN EL MISMO FORMATO PARA PODER COMPARARLO !!!!!! **  
+=ARRAYFORMULA(FECHA(C2,1,1))
 ```
+Por último, observo que las valoraciones de la crítica están en una escala de 0 a 100 y las de los usuarios de 0 a 10 (usando decimales en esta última columna). Decido uniformar el formato de ambas para una mejor comprensión, genrando una nueva columna _"User_Score_0/100"_ donde las valoraciones de los usuarios se encontrarán en un formato de 0 a 100 gracias a la siguiente fórmula:
+```
+=ARRAYFORMULA(SI(ESNUMERO(M3), M3 * 10, ""))
+```
+
+#### X.1.3 Columnas con valores faltantes destacables
+Las columnas con considerables valores faltantes son las de valoración (Critic_Score, Critic_Count, User_Score y User_Count), y la de desarrollador (Developer), 
+
+yo creo que voy a decir que con tantos valores vacíos no resulta relevante para el análisis, que se centrará en las ventas tal y como indica el nombre del dataset, siendo las valoraciones también un indicador secundario pero no el principal. MAS DE UN TERCIO FALTA EN DESARROLLADOR, EN VALORACIONES INCLUSO MÁS. 
 
 ### X.2 Análisis descriptivo de los datos 
 
