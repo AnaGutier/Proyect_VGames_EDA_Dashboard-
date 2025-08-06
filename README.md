@@ -78,23 +78,34 @@ En concreto con la columna de año de publicación, al tener sólo el dato del a
 ```
 =ARRAYFORMULA(FECHA(C2,1,1))
 ```
+Al realizar esto me doy cuenta de que en algunos casos la fórmula no funciona debido a que hay 150 filas no numéricas, que contienen "N/A". Al tratarse de menos de un 1% de los datos totales decido eliminarlas al no resultar representativas.
+
 Por último, observo que las valoraciones de la crítica están en una escala de 0 a 100 y las de los usuarios de 0 a 10 (usando decimales en esta última columna). Decido uniformar el formato de ambas para una mejor comprensión, genrando una nueva columna _"User_Score_0/100"_ donde las valoraciones de los usuarios se encontrarán en un formato de 0 a 100 gracias a la siguiente fórmula:
 ```
 =ARRAYFORMULA(SI(ESNUMERO(M3), M3 * 10, ""))
 ```
 
 #### X.1.3 Columnas con valores faltantes destacables
-Las columnas con considerables valores faltantes son las de valoración (Critic_Score, Critic_Count, User_Score y User_Count), y la de desarrollador (Developer). Estos valores faltantes llegan a suponer en algunos casos un tercio u incluso más del total, por lo que es necesario tener esto en cuenta a la hora de realizar el análisis de los mismos. Estos datos pueden ser útiles pero a su vez pueden generar sesgos si no tenemos esto en cuenta, e ignorar los juegos que no cuentan con estos datos supone reducir demasiado la muestra. Por ello se realizará el análisis principal enfocado en las ventas y las columnas completas (asegurando una base sólida para este EDA), dejando las otras como un indicador secundario del que no podemos extrapolar al conjunto total, remarcando su carater parcial.  
+Las columnas con considerables valores faltantes son las de valoración (Critic_Score, Critic_Count, User_Score y User_Count),la de la clasificación (Rating) y la de desarrollador (Developer). Estos valores faltantes llegan a suponer en algunos casos un tercio u incluso más del total, por lo que es necesario tener esto en cuenta a la hora de realizar el análisis de los mismos. Estos datos pueden ser útiles pero a su vez pueden generar sesgos si no tenemos esto en cuenta, e ignorar los juegos que no cuentan con estos datos supone reducir demasiado la muestra. Por ello se realizará el análisis principal enfocado en las ventas y las columnas completas (asegurando una base sólida para este EDA), dejando las otras como un indicador secundario del que no podemos extrapolar al conjunto total, remarcando su carater parcial. Además, se tratará de comprobar si esta ausencia de datos sigue un patrón reconocible. 
  
 
 ### X.2 Análisis descriptivo de los datos 
 
-Genero una nueva hoja _"Tablas Din 1"_ donde comienzo a generar tablas dinámicas donde relaciono las diferentes variables del set de datos. Junto a estas genero gráficos que me permiten una forma visual de comprender las tendencias de los datos. 
+Genero una nueva hoja _"Tablas Din 1"_ donde comienzo a generar tablas dinámicas donde relaciono las diferentes variables del set de datos. Junto a estas genero gráficos que me permiten comenzar a comprender de una forma visual las tendencias de los datos. Clasifico esas tablas de la siguiente forma:
+
+#### X.2.1 Características de los juegos
+Atiendo en primer lugar al  género, plataforma, año, clasificación, desarrollador y empresa que publica los juegos en función del conteo de estos. Así observo que:
+-  la mayoría de juegos se publican en los años ____________. (rarogno esto eeeeee)
 
 
-
-¿LOS DATOS FALTANTES TIENEN UN PATRÓN? POSIBLEMENTE EL AÑO DE PUBLICACIÓN DE LOS VIDEOUJEGOS 
+LOS DATOS FALTANTES TIENEN UN PATRÓN: EL AÑO DE PUBLICACIÓN DE LOS VIDEOUJEGOS (Incapacidad de feedback de valoraciones, menos desarrollo interno de los videoguegos y no había clasificación por edades)
 
 ### X.3 Dashboard
 
+_Big numbers - elementos más importantes - interactividad confiltros y macros._
+
 ### X.4 Informe explicativo del análisis 
+Lo voy generando paso a paso pero le voy una vuelta al final sobre las conclusiones y eso
+
+## Informe final - Conclusiones  
+Advertencia inicial sobre 
