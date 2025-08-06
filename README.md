@@ -107,15 +107,15 @@ Atiendo en primer lugar al  año, género, plataforma, clasificación, desarroll
 
 _Inciso: para la visualización de tablas dinámicas con datos faltantes, he añadido un filtro en la propia tabla para ocultar esos datos vacíos y poder observar únicamente la información relevante (siendo consciente de estas ausencias como he explicado antes y explicito en el informe final)._
 
-A continuación realciono todas estas variables entre sí, dando lugar a las siguientes observaciones:
+A continuación realciono todas estas variables entre sí, usando los filtros necesarios para los valores poco relevantes que sólo oscueren la visibilidad de las tendencias de los datos, dando lugar a las siguientes observaciones:
 
-- Plataforma x año
+- A lo largo del tiempo las plataformas más usadas varían, destacan PS a finales de la década de 1990, hasta que aparece PS2 que rápidamente la sustitye, dejando paso para un enorme auge de DS a final de la década de los años 2000. Este momento también será el que cuenta con mayor variedad de plataformas, con valores relevantes de Wii, X360 o PS3 y dejando obsoletas algunas como SNES, o la inicialmente mencionada PS. 
 
-- género x año
+- género x año: hecho falta expicar!!!!!!!!!!!!!
 
-- plataforma x género
+- plataforma x género:
 
-- rating x año
+- rating x año: hecho falta explicar!!!!!!!!!!
 
 - rating x plataforma
 
