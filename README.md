@@ -94,10 +94,38 @@ Las columnas con considerables valores faltantes son las de valoración (Critic_
 Genero una nueva hoja _"Tablas Din 1"_ donde comienzo a generar tablas dinámicas donde relaciono las diferentes variables del set de datos. Junto a estas genero gráficos que me permiten comenzar a comprender de una forma visual las tendencias de los datos. Clasifico esas tablas de la siguiente forma:
 
 #### X.2.1 Características de los juegos
-Atiendo en primer lugar al  género, plataforma, año, clasificación, desarrollador y empresa que publica los juegos en función del conteo de estos. Así observo que:
--  la mayoría de juegos se publican en los años ____________. (rarogno esto eeeeee)
+Atiendo en primer lugar al  año, género, plataforma, clasificación, desarrollador y empresa que publica los juegos en función del conteo de estos. Así observo que:
+-  La mayoría de juegos se publican en los años 2002 - 2011, existiendo cifras considerables desde finales de los 90 hasta 2016. Resulta extraño que desde 2009 el numero de videojuegos vaya en descenso, y especialmente que en 2017 y 2020 sólo se registres 3 y 1 videojuego respectivamente (sin datos de 2018 y 2019) ya que elmercado de videojuegos continuaba muy activo y creciente en esos años. Esto puede deberse a la recogida de datos. 
+
+- Los géneros más populares son acción (con una gran diferencia), deportes, misc (juegos que engloban varios géneros), role-playing, shooters, aventuras y carreras, en ese orden. Los menos populares son rompecabezas y estrategia.
+
+- En las plataformas predominan PS2 y DS con gran ventaja, seguidas de PS3, X360, Wii, PSP y PS. Las minoritarias son GB y NES. 
+
+- La clasificación más numerosa es con amplia diferecia E () seguida de T (), siendo residuales los casos de juegos clasificados como AO (Adults Only), RP (Rating Pending), K-A (Kids to Adults) y EC (Early Childhood). Estos últimos serán desestimados por su escaso número en indagaciones postreiores. 
+
+- En el caso de las catogrías de desarrollador y empresa publicadora del juego, encontramos tal diversidad que no resultan esclarecientes las tablas y gráficos. Para considerar estas variables atenderemos a la frecuencia de las mismas o a su realción con otras variables si estas brindaran resultados relevantes.
+
+_Inciso: para la visualización de tablas dinámicas con datos faltantes, he añadido un filtro en la propia tabla para ocultar esos datos vacíos y poder observar únicamente la información relevante (siendo consciente de estas ausencias como he explicado antes y explicito en el informe final)._
+
+A continuación realciono todas estas variables entre sí, dando lugar a las siguientes observaciones:
+
+- Plataforma x año
+
+- género x año
+
+- plataforma x género
+
+- rating x año
+
+- rating x plataforma
+
+- rating x género
+
+- CON EL PUBLICADOR Y DESARROLLADOR
 
 
+#### X.2.2 Análisis de las ventas
+#### X.2.X Análisis de las valoraciones
 LOS DATOS FALTANTES TIENEN UN PATRÓN: EL AÑO DE PUBLICACIÓN DE LOS VIDEOUJEGOS (Incapacidad de feedback de valoraciones, menos desarrollo interno de los videoguegos y no había clasificación por edades)
 
 ### X.3 Dashboard
@@ -108,4 +136,5 @@ _Big numbers - elementos más importantes - interactividad confiltros y macros._
 Lo voy generando paso a paso pero le voy una vuelta al final sobre las conclusiones y eso
 
 ## Informe final - Conclusiones  
-Advertencia inicial sobre 
+Advertencia inicial sobre los datos faltantes 
+
