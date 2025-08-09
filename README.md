@@ -91,7 +91,7 @@ Las columnas con considerables valores faltantes son las de valoración (Critic_
 
 ### X.2 Análisis descriptivo de los datos 
 
-Genero una nueva hoja _"Tablas Din 1"_ donde comienzo a generar tablas dinámicas donde relaciono las diferentes variables del set de datos. Junto a estas genero gráficos que me permiten comenzar a comprender de una forma visual las tendencias de los datos. Clasifico esas tablas de la siguiente forma:
+Genero una nueva hoja _"Tablas Din 1"_ donde comienzo a generar tablas dinámicas donde relaciono las diferentes variables del set de datos. Junto a estas genero gráficos que me permiten comenzar a comprender de una forma visual las tendencias de los datos. Uso formatos condicionales para mejor visualización de las tablas. Clasifico esas tablas de la siguiente forma:
 
 #### X.2.1 Características de los juegos
 Atiendo en primer lugar al  año, género, plataforma, clasificación, desarrollador y empresa que publica los juegos en función del conteo de estos. Así observo que:
@@ -109,19 +109,19 @@ _Inciso: para la visualización de tablas dinámicas con datos faltantes, he añ
 
 A continuación realciono todas estas variables entre sí, usando los filtros necesarios para los valores poco relevantes que sólo oscueren la visibilidad de las tendencias de los datos, dando lugar a las siguientes observaciones:
 
-- A lo largo del tiempo las plataformas más usadas varían, destacan PS a finales de la década de 1990, hasta que aparece PS2 que rápidamente la sustitye, dejando paso para un enorme auge de DS a final de la década de los años 2000. Este momento también será el que cuenta con mayor variedad de plataformas, con valores relevantes de Wii, X360 o PS3 y dejando obsoletas algunas como SNES, o la inicialmente mencionada PS. 
+- Año y plataforma: A lo largo del tiempo las plataformas más usadas varían, destacan PS a finales de la década de 1990, hasta que aparece PS2 que rápidamente la sustitye, dejando paso para un enorme auge de DS a final de la década de los años 2000. Este momento también será el que cuenta con mayor variedad de plataformas, con valores relevantes de Wii, X360 o PS3 y dejando obsoletas algunas como SNES, o la inicialmente mencionada PS. 
 
-- género x año: hecho falta expicar!!!!!!!!!!!!!
+- Año y género: Entre géneros, a lo largo del tiempo se observa la predominancia de los juegos de acción,superada únicamente por los deportivos hasta inicios de la década de los 2000. Pocos años después aumentan notablemente los juegos Misc y de aventuras. Poca relevancia.
 
-- plataforma x género:
+- Año y rating: Las principales clasificaciones de videojuegos no presentan destacables cambios conel paso de los años. Tras su incorposación E10+ si experimenta gran crecimiento al rededor de 2005, siendo E siempre dominante a pesar de una curva e desceso a mediados de la década de los 2000.
 
-- rating x año: hecho falta explicar!!!!!!!!!!
+- Plataforma y género: Aunque no hay una correlación relevante entre estas categorías, destaca la inusual popularidad de juegos de simulación en DS frente a otras consolas, la de estrategia en PC. Suelen predominar los juegos de deporte (PS2, Wii, x360) o los de Role-playing y shooters (PSP o 3DS).
 
-- rating x plataforma
+- rating x plataforma: No brinda información muy destacable, en la mayoría predominan juegos para todos los públicos, aumentando las restricciones de edad en PS2, PS3, PC, XB y X36. Estas son también algunas de las más populares, así que tienen por lo general más variedad de juegos.
 
-- rating x género
+- rating x género: No presentan tendencias demasiado destacables,al margen de que en la mayoría de géneros predomina la categoría E (para todos los públicos),excepto en los de lucha y acción que sobre todo son T (Adolescentes, a partir de 13 años aprox), y los shootes M (Maduro, a partir de unos 17 años aprox). 
 
-- CON EL PUBLICADOR Y DESARROLLADOR
+- CON EL PUBLICADOR Y DESARROLLADOR QUÉ ONDAAA ??
 
 
 #### X.2.2 Análisis de las ventas
