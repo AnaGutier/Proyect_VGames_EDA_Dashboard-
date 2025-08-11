@@ -3,8 +3,8 @@ Primer Proyecto EDA - Dashboard en Google Sheets
 Primera línea para subir un primer cambio en el repo 
 
 
-IMPORTANTE REALIZAR Y SEÑALAR QUE REALIZO EL EDA CON UN OBJETIVO PROPIO
-Pinta que puede ser ver la valoracion de cada juego en realición a diferentes parámetros
+IMPORTANTE REALIZAR Y SEÑALAR QUE REALIZO EL EDA CON UN OBJETIVO PROPIO: VOY A HACER UN ESTUDIO DE LAS VENTAS!!!! VEN-TAS
+Pinta que puede ser ver las VENTAS de cada juego en realición a diferentes parámetros (localización, año,)
 Aun así es importante analizar todas las variables entre sípara captiar todas sus relaciones.
 
 ## 0. La fuente de los datos, enlace a Kaggle 
@@ -121,16 +121,38 @@ A continuación realciono todas estas variables entre sí, usando los filtros ne
 
 - rating x género: No presentan tendencias demasiado destacables,al margen de que en la mayoría de géneros predomina la categoría E (para todos los públicos),excepto en los de lucha y acción que sobre todo son T (Adolescentes, a partir de 13 años aprox), y los shootes M (Maduro, a partir de unos 17 años aprox). 
 
-- CON EL PUBLICADOR Y DESARROLLADOR QUÉ ONDAAA ??
+- CON EL PUBLICADOR Y DESARROLLADOR QUÉ ONDAAA ?? SON TANTOS QUE NO ESTOY SABIENDO GESTIONAR CÓMO HACERO
+
+- Y LAS VALORACIONES TAMBIÉN O QUÉ 
 
 
 #### X.2.2 Análisis de las ventas
+En otra hoja del archivo genero las tablas dinámimcas en relación a los datos de las ventas.
+
+- Ventas en cada sitio a lo largo de los años
+
+- "" x plataforma
+
+- "" x género
+
+- "" x Clasificación
+
+- "" x Empresa
+
+- "" x Desarrollador
+
+- "" x LAS COSAS DE CLASIFICACIÓN 
+
 #### X.2.X Análisis de las valoraciones
 LOS DATOS FALTANTES TIENEN UN PATRÓN: EL AÑO DE PUBLICACIÓN DE LOS VIDEOUJEGOS (Incapacidad de feedback de valoraciones, menos desarrollo interno de los videoguegos y no había clasificación por edades)
 
 ### X.3 Dashboard
 
-_Big numbers - elementos más importantes - interactividad confiltros y macros._
+Pondría un mapa pero como hay una categoría que es 'otros países' no tiene sentido asociarla a ningun espacio concreto y puede generar confusiones. 
+
+Decir que no he usado % porque creo que es mejor verlo en cifras tal cual
+
+_Big numbers: Juego más vendido, Publicador más vendido, plataforma más vendida...  - elementos más importantes - interactividad confiltros y macros._
 
 ### X.4 Informe explicativo del análisis 
 Lo voy generando paso a paso pero le voy una vuelta al final sobre las conclusiones y eso
