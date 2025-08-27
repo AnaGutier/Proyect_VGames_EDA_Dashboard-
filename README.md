@@ -121,27 +121,26 @@ A continuación realciono todas estas variables entre sí, usando los filtros ne
 
 - rating x género: No presentan tendencias demasiado destacables,al margen de que en la mayoría de géneros predomina la categoría E (para todos los públicos),excepto en los de lucha y acción que sobre todo son T (Adolescentes, a partir de 13 años aprox), y los shootes M (Maduro, a partir de unos 17 años aprox). 
 
-- CON EL PUBLICADOR Y DESARROLLADOR QUÉ ONDAAA ?? SON TANTOS QUE NO ESTOY SABIENDO GESTIONAR CÓMO HACERO
+- Publicador y desarrollador: Tanta diversidad de publicadores y desarrolladores no permite extraer conclusiones que determinen tendencias a priori.
 
-- Y LAS VALORACIONES TAMBIÉN O QUÉ 
+- Valoraciones: Al tratar las valoraciones observo que es a partir de los años 2000 que comienzan a efectuarse (motivo por el cual encontramos muchos datos faltantes), posiblemente al abrise los canales correspondientes para que críticos y usuarios valores los juegos. Hay un declive a medidados de la década de 2010. Las puntuaciones más altas coinciden por lo general tanto en ususarios como en crítcos, siendo según género acción, deportes y shooters los favoritos; por plataforma PS2 y x360, y en clasificación T y E. 
 
 
 #### X.2.2 Análisis de las ventas
 En otra hoja del archivo genero las tablas dinámimcas en relación a los datos de las ventas.
 
-- Ventas en cada sitio a lo largo de los años
+- En términos de ventas totales casi la mitad de las ventas corresponden a norteamérica, un poco más de un cuarto a Europa, seguidas de las ventas en Japón y el resto quedando para "otras regiones".
 
-- "" x plataforma
+- Las ventas por plataforma las lideran PS2, X360, PS3, Wii , DS y PS. En las ventas en Japón destacan sobre otros países consolas como SAT, SNES, NES, GB (más antiguas) o 3DS y PSP; siendo muy inferior la familia XB, XOne y X360 y también el PC.
 
-- "" x género
+- El género más vendido es acción, seguido aun con gran diferencia por deportes. Japón presenta excepciones como la preeminancia del Role-PLaying y Misc, que son poco populares en otras regiones.
 
-- "" x Clasificación
+- En términos globales la clasificación principal (40,2%) es E, seguida de T y M con un cuarto de las ventas aproximadamente en cada una de ellas. En las diferentes regiones la dinámica es similar a excepción de que en Japón E y T tienen un nivel de ventas similar dejando el resto de categorías como minoritarias. 
 
 - "" x Empresa
-
 - "" x Desarrollador
 
-- "" x LAS COSAS DE CLASIFICACIÓN 
+- Para realizar un estudio de las valoraciones genero columnas extra sobre las iniales con estos datos agrupados para poder generar tablas dinámicas y gráficos.   
 
 #### X.2.X Análisis de las valoraciones
 LOS DATOS FALTANTES TIENEN UN PATRÓN: EL AÑO DE PUBLICACIÓN DE LOS VIDEOUJEGOS (Incapacidad de feedback de valoraciones, menos desarrollo interno de los videoguegos y no había clasificación por edades)
