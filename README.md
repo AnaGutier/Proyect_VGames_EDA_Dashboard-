@@ -137,10 +137,14 @@ En otra hoja del archivo genero las tablas dinámimcas en relación a los datos 
 
 - En términos globales la clasificación principal (40,2%) es E, seguida de T y M con un cuarto de las ventas aproximadamente en cada una de ellas. En las diferentes regiones la dinámica es similar a excepción de que en Japón E y T tienen un nivel de ventas similar dejando el resto de categorías como minoritarias. 
 
-- "" x Empresa
-- "" x Desarrollador
+- Para realizar un estudio de las valoraciones genero columnas extra sobre las iniales con estos datos agrupados para poder generar tablas dinámicas y gráficos. Lo hago agregando a las nuevas columnas la siguiente fórmula en relación a su columna de referencia.
 
-- Para realizar un estudio de las valoraciones genero columnas extra sobre las iniales con estos datos agrupados para poder generar tablas dinámicas y gráficos.   
+```
+=ARRAYFORMULA( SI(K2:K="", "", ENTERO(K2:K/10)*10 & "-" & (ENTERO(K2:K/10)*10+9) ))
+```
+Gracias  a esto pued comprobar que según aumentan las puntuaciones en las valoraciones tanto de críticos como de usuarios, las ventas son mayores. LA SUMA - EL PROMEDIO (La suma tiene menos ventas en 90 porque hay menos juegos tan bien valorados)
+
+-  En los ámbitos de empresa y desarrollador es tanta la variedad que no hay resultados reseñables más allá de los qu consiguen más ventas en las diferentes regiones, lo cual descubro gracias a hacer rangos de ventas (al igual que los rangos previamente generados para las valoraciones). En el caso de los publicadores destaca Nintendo en todos los espacios a excepción de la clasificación de otras regiones donde sobresale Take-Two Interactive. En el caso de los desarrolladores sucede lo mismo con Nintendo y en otras regiones predomina Rockstar North. 
 
 #### X.2.X Análisis de las valoraciones
 LOS DATOS FALTANTES TIENEN UN PATRÓN: EL AÑO DE PUBLICACIÓN DE LOS VIDEOUJEGOS (Incapacidad de feedback de valoraciones, menos desarrollo interno de los videoguegos y no había clasificación por edades)
