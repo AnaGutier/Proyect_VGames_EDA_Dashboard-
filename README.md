@@ -1,30 +1,28 @@
 # :chart_with_upwards_trend: Proyecto EDA - Dashboard en Google Sheets
 
- :dart: Descripción del proyecto 
+ :dart: Descripción del proyecto:
+El presente proyecto consiste en realizar un EDA y Dashboard analizando los datos, en este caso, respectivos a las ventas de videojuegos una empresa. El objetivo del mismo es realizar un análisis exploratorio de los datos recibidos para lograr una comprensión de los mismos que pueda revelar información relevante para la empresa, ofreciendo una visualización óptima de estos. 
 
-- En qué consiste y cuál es el objetivo - mencionar brevemente el contexto del análisis y los problemas que he resuelto - técnicas y enfoques usados. Un parrafito.
-- Enlace al sheets!!!!!!!!
+He realizado una inspección preliminar, seguida de una limpieza y transformación de los datos, que me ha permitido efectuar un análisis descriptivo de ellos, finalizando con un dashboard y un informe final con el que conluiré. 
 
-IMPORTANTE REALIZAR Y SEÑALAR QUE REALIZO EL EDA CON UN OBJETIVO PROPIO: VOY A HACER UN ESTUDIO DE LAS VENTAS!!!! 
- VENTAS de cada juego en realición a diferentes parámetros (localización, año,)
-Aun así es importante analizar todas las variables entre sípara captiar todas sus relaciones.
+Para todo ello he trabajado en Google Sheets, el proyecto se encuentra el siguiente archivo:
+```bash
+ https://docs.google.com/spreadsheets/d/1uEBYeDHfkQbDMO2LfjGRvgs1g0HuvT47uZs64pky83s/edit?usp=sharing 
+```
 
-## :postbox: 1. La fuente de los datos, enlace a Kaggle 
-Y EL ACCESO AL GOOGLE SHEETS URL DE ACCESO PÚBLICO EN MODO LECTURA
-
-:space_invader:
-
-API: kaggle kernels pull artemsolomko/video-games-sales-with-score-eda-and-stat-test 
+## :postbox: 1. Fuente de datos
+:space_invader: Los datos con los que he trabajado provienen de un Dataset público en Jaggle, cuyo enlace es el siguiente:
 
 ```bash
-URL: https://www.kaggle.com/code/artemsolomko/video-games-sales-with-score-eda-and-stat-test/input 
+ https://www.kaggle.com/code/artemsolomko/video-games-sales-with-score-eda-and-stat-test/input 
 ```
 
 ## :computer: 2. Estructura del repositorio
+Los archivos que contiene este repositotio son los siguientes: 
+
 ```bash
 |--> Data #Datos en crudo
 |-----> video_Games_Sales_as_at22_Dec_2016.csv
-|--> Google Sheets .extensión? #Enlace al archivo de Google Sheets??
 |--> README.md #Descripción del proyecto 
 
 ```
@@ -32,9 +30,9 @@ URL: https://www.kaggle.com/code/artemsolomko/video-games-sales-with-score-eda-a
 ## :hourglass: 3. Fases de realización del proyecto 
 
 ### 3.1 Carga y comprensión general de los datos
-En primer lugar, realizo la carga de los datos a u nuevo archivo de  Google Sheets, espacio donde trabajaré con ellos. A continuación inspecciono de forma genérica filas y columnas para comprender las principales características de las mismas.
+A continuación presento el proceso por el cual he llevado a cabo este proyecto. En primer lugar, realizo la carga de los datos a u nuevo archivo de  Google Sheets, espacio donde trabajaré con ellos. A continuación inspecciono de forma genérica filas y columnas para comprender las principales características de las mismas.
 
-Definicion de las columnas en orden de aparición según elarchivo original:
+Definicion de las columnas en orden de aparición según el set de datos original:
 
 - **Name:** Nombre del videojuego. No es un valor único porque hay juegos con un mismo nombre que se juegan en diferentes consolas sin ser exactamente el mismo (pues cada consola ofrece diferentes prestaciones y experiencia de juego). Valor nominal.
 - **Platform:** Plataforma o consola donde se juega el videojuego en cuestión. Valor nominal.
@@ -209,5 +207,5 @@ Entre desarrolladores sucede lo mismo: Nintendo lidera ampliamente, seguido en a
 
 - Atender a la clasificación por edades: la categoría E sigue siendo la más amplia y segura comercialmente, pero T y M representan un público adolescente/adulto que puede aportar estabilidad y fidelización a largo plazo.
 
-## :page_with_curl: X. Autores 
-
+## :page_with_curl: 5. Autores 
+Proyecto realizado por Ana Gutiérrez Hernández. 
